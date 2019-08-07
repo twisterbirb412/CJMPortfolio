@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: "Open Sans",
+    sans-serif; 
+    font-size: 20px;
+    color: #444;
+    line-height: 1.5;
+  }
+
+  h1 {
+      font-size: 50px;
+  }
+
+
+  nav {
+    background-color: #808080;
+    text-align: right;
+  }
+
+  nav * {
+      text-decoration: none;
+      display: inline-block;
+  }
+
+  section {
+      text-align: center;
+  }
+
+  footer {
+      background-color: #808080;
+      text-align: center;
+  }
+
+  footer * {
+    text-decoration: none;
+    display: inline-block;
+    margin: 15px;
+  }
