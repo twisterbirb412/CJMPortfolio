@@ -11,23 +11,58 @@
   }
 
   h1 {
-      font-size: 50px;
+      font-size: 60px;
+      font-weight: 700;
+      margin: 5px;
+  }
+
+  h2 {
+      font-size: 40px;
   }
 
 
   nav {
     background-color: #808080;
     text-align: right;
+    padding: 5px;
   }
 
   nav * {
       text-decoration: none;
       display: inline-block;
+      color: white;
+      margin: 5px;
   }
 
-  section {
-      text-align: center;
+  p {
+      text-align: left;
   }
+
+.techList > * {
+      text-decoration: none;
+      text-align: left;
+      display: inline-block;
+  }
+
+section {
+      text-align: center;
+      padding: 2.5% 10% 2.5% 10%;
+  }
+
+section:nth-child(even) {
+    background-color: #ddd;
+  }
+
+label {
+    font-weight: 700;
+    text-align: left;
+}
+
+.exampleImages * {
+    max-height: 200px;
+    max-width: 400px;
+    display: inline block;
+}
 
   footer {
       background-color: #808080;
@@ -37,5 +72,11 @@
   footer * {
     text-decoration: none;
     display: inline-block;
-    margin: 15px;
+    margin: 10px;
+    color :white;
+  }
+
+  .footerLinks * {
+      height: 30px;
+      width: 30px;
   }
