@@ -10,28 +10,20 @@
     line-height: 1.5;
   }
 
-  h1 {
-      font-size: 60px;
-      font-weight: 700;
-      margin: 5px;
-  }
-
-  h2 {
-      font-size: 40px;
-  }
-
 
   nav {
     background-color: #808080;
-    text-align: right;
-    padding: 5px;
+    display: flex;
+    justify-content: flex-end;
   }
 
   nav * {
       text-decoration: none;
       display: inline-block;
       color: white;
-      margin: 5px;
+      margin-top: auto;
+      margin-bottom: auto;
+      margin-right: 5px;
   }
 
   p {
@@ -80,3 +72,132 @@ label {
       height: 30px;
       width: 30px;
   }
+
+  /* Smartphones (portrait and landscape) ----------- */
+@media screen and (max-width: 520px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 5px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+
+  .navbar {
+    height: 7%;
+  }
+
+  .hamburger {
+    font-size: 15px;
+    top: 8%;
+    right: 1%;
+  }
+
+  .menu {
+    font-size: 0;
+  }
+
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 7%;
+  }
+  
+footer h3 {
+    font-size: 15px;
+  }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media screen and (min-width: 521px) and (max-width: 1024px) {
+  header {
+    display: flex;
+    align-items: left;
+  }
+
+  .menu {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 50px;
+    font-weight: 700;
+    margin: 5px;
+}
+
+
+h2 {
+  font-size: 30px;
+}
+  .navbar {
+    height: 30px;
+  }
+
+  .hamburger {
+      opacity: 0;
+  }
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+  }
+
+footer h3 {
+    font-size: 18px;
+  }
+
+}
+/* Desktops and laptops ----------- */
+@media screen and (min-width: 1024px) {
+  header {
+    display: flex;
+    align-items: left;
+  }
+
+  h1 {
+    font-size: 60px;
+    font-weight: 700;
+    margin: 5px;
+  }
+
+  h2 {
+    font-size: 40px;
+}
+
+  .navbar {
+    height: 7%;
+  }
+  .menu {
+    font-size: 20px;
+    top: 15px;
+  }
+
+  .hamburger {
+    opacity: 0;
+  }
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 7%;
+  }
+
+footer h3 {
+  font-size: 20px;
+}
+
+}
