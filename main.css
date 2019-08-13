@@ -2,6 +2,23 @@
     box-sizing: border-box;
   }
 
+  @font-face {
+    font-family: Oswald; src: url('Fonts/Oswald/Oswald-Regular.ttf')
+  }
+
+
+  @font-face {
+    font-family: Oswald; font-weight: light; src: url('Fonts/Oswald/Oswald-Light.ttf')
+  }
+
+  @font-face {
+    font-family: Oswald; font-weight: bold; src: url('Fonts/Oswald/Oswald-Bold.ttf')
+  }
+
+  @font-face {
+    font-family: Quattrocento; src: url('Fonts/Quattrocento/Quattrocento-Regular.ttf')
+  }
+
   body {
     font-family: "Open Sans",
     sans-serif; 
@@ -10,6 +27,13 @@
     line-height: 1.5;
   }
 
+  header {
+    background-color: #D6F014;
+  }
+
+  p, li {
+    font-family: Quattrocento, sans-serif;
+  }
 
   nav {
     background-color: #808080;
@@ -24,10 +48,21 @@
       margin-top: auto;
       margin-bottom: auto;
       margin-right: 5px;
+      
+  }
+
+  nav li {
+    font-family: Oswald, sans-serif;
   }
 
   p {
       text-align: left;
+      
+  }
+
+  h1, h2 , h3, label, .contact {
+    font-family: Oswald, sans-serif;
+    font-weight: bold;
   }
 
 .techList > * {
