@@ -1,22 +1,23 @@
 * {
     box-sizing: border-box;
+    margin: 0;
   }
 
   @font-face {
-    font-family: Oswald; src: url('Fonts/Oswald/Oswald-Regular.ttf')
+    font-family: Oswald; src: url('Fonts/Oswald/Oswald-Regular.ttf');
   }
 
 
   @font-face {
-    font-family: Oswald; font-weight: light; src: url('Fonts/Oswald/Oswald-Light.ttf')
+    font-family: Oswald; font-weight: light; src: url('Fonts/Oswald/Oswald-Light.ttf');
   }
 
   @font-face {
-    font-family: Oswald; font-weight: bold; src: url('Fonts/Oswald/Oswald-Bold.ttf')
+    font-family: Oswald; font-weight: bold; src: url('Fonts/Oswald/Oswald-Bold.ttf');
   }
 
   @font-face {
-    font-family: Quattrocento; src: url('Fonts/Quattrocento/Quattrocento-Regular.ttf')
+    font-family: Quattrocento; src: url('Fonts/Quattrocento/Quattrocento-Regular.ttf');
   }
 
   body {
@@ -25,6 +26,8 @@
     font-size: 20px;
     color: #444;
     line-height: 1.5;
+    background-image: url("Images/blackandwhite.jpg");
+    background-size: cover;
   }
 
   header {
@@ -36,7 +39,7 @@
   }
 
   nav {
-    background-color: #808080;
+    background-color: black;
     display: flex;
     justify-content: flex-end;
   }
@@ -55,14 +58,24 @@
     font-family: Oswald, sans-serif;
   }
 
+  nav li:hover {
+    color:bFF5B63;
+  }
+
   p {
       text-align: left;
+      line-height: 200%;
+      
       
   }
 
   h1, h2 , h3, label, .contact {
     font-family: Oswald, sans-serif;
     font-weight: bold;
+  }
+
+  h1, h2 , h3, label {
+    color: black;
   }
 
 .techList > * {
@@ -74,10 +87,11 @@
 section {
       text-align: center;
       padding: 2.5% 10% 2.5% 10%;
+      background-color: none;
   }
 
 section:nth-child(even) {
-    background-color: #ddd;
+    background-color: #808080;
   }
 
 label {
@@ -92,7 +106,7 @@ label {
 }
 
   footer {
-      background-color: #808080;
+      background-color: black;
       text-align: center;
   }
 
