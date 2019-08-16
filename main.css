@@ -33,6 +33,8 @@
 
   header {
     background-color: #D6F014;
+    position: fixed;
+    width: 100%;
   }
 
   p, li {
@@ -61,6 +63,7 @@
 
   nav li:hover {
     color: #FF1493;
+    cursor: pointer;
   }
 
   p {
@@ -78,6 +81,15 @@
   h1, h2 , h3, label {
     color: black;
     margin: 10px;
+  }
+
+  p a {
+    color: black;
+    font-weight: bold;
+    }
+
+  p a:hover {
+    color: #FF1493;
   }
 
 .techList > * {
@@ -149,12 +161,11 @@ label {
     font-size: 40px;
     font-weight: 700;
     margin: 5px;
-}
+  }
 
-h2 {
+  h2 {
   font-size: 25px;
-}
-
+  }
 
   .navbar {
     height: 7%;
@@ -175,6 +186,9 @@ h2 {
     align-items: center;
     justify-content: center;
     height: 7%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
   }
   
 footer h3 {
