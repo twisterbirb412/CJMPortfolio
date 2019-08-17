@@ -21,30 +21,40 @@
   }
 
   body {
-    font-family: "Open Sans",
-    sans-serif; 
+    font-family: "Open Sans",sans-serif; 
+  }
+
+  main {
     font-size: 20px;
+    position: relative;
     color: #444;
     line-height: 1.5;
-    background-image: url("Images/blackandwhite.jpg");
-    
-
   }
 
   header {
     background-color: #D6F014;
     position: fixed;
     width: 100%;
+    margin-top: 0;
+    z-index: 1000;
+  }
+
+  .nameBanner {
+    width: 100%;
+    height: 8%;
   }
 
   p, li {
     font-family: Quattrocento, sans-serif;
+    z-index: 8;
   }
 
-  nav {
-    background-color: black;
-    display: flex;
-    justify-content: flex-end;
+  .navbar {
+      background-color: black;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      padding: 15px;
   }
 
   nav * {
@@ -61,6 +71,7 @@
     font-family: Oswald, sans-serif;
   }
 
+
   nav li:hover {
     color: #FF1493;
     cursor: pointer;
@@ -69,7 +80,7 @@
   p {
       text-align: left;
       line-height: 200%;
-      color: #1a1a1a;
+      color: black;
       opacity: 1;
   }
 
@@ -104,13 +115,26 @@
 section {
       text-align: center;
       padding: 2.5% 10% 2.5% 10%;
-      background-color: white;
-      opacity: 0.7;
   }
+
+
+section:nth-child(odd)::after {
+  content: "";
+  background: url("Images/world-map.png");
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
 
 section:nth-child(even) {
     background-color: #808080;
+    background-size: cover;
     opacity: 1;
+    color: black;
   }
 
 label {
@@ -127,22 +151,22 @@ label {
   footer {
       background-color: black;
       text-align: center;
-      margin: 0;
   }
 
   footer * {
     text-decoration: none;
     display: inline-block;
-    margin: 10px;
+
     color :white;
   }
 
   .footerLinks * {
       height: 30px;
       width: 30px;
+      margin-left: 10px;
   }
 
-  .footerlinks img:hover {
+  .footerLinks img:hover {
     border: 2px solid #FF1493;
     height: 40px;
     width: 40px;
@@ -157,6 +181,10 @@ label {
     justify-content: center;
   }
 
+  main {
+    padding-top: 149px;
+  }
+
   h1 {
     font-size: 40px;
     font-weight: 700;
@@ -165,10 +193,6 @@ label {
 
   h2 {
   font-size: 25px;
-  }
-
-  .navbar {
-    height: 7%;
   }
 
   .hamburger {
@@ -198,9 +222,13 @@ footer h3 {
 
 /* iPads (portrait and landscape) ----------- */
 @media screen and (min-width: 521px) and (max-width: 1024px) {
-  header {
+  .nameBanner {
     display: flex;
     align-items: left;
+  }
+
+  main {
+    padding-top: 119px;
   }
 
   .menu {
@@ -211,14 +239,11 @@ footer h3 {
     font-size: 50px;
     font-weight: 700;
     margin: 5px;
-}
+  }
 
 
-h2 {
-  font-size: 30px;
-}
-  .navbar {
-    height: 30px;
+  h2 {
+    font-size: 30px;
   }
 
   .hamburger {
@@ -239,9 +264,13 @@ footer h3 {
 }
 /* Desktops and laptops ----------- */
 @media screen and (min-width: 1024px) {
-  header {
+  .nameBanner {
     display: flex;
     align-items: left;
+  }
+
+  main {
+    padding-top: 157px;
   }
 
   h1 {
@@ -254,9 +283,6 @@ footer h3 {
     font-size: 40px;
 }
 
-  .navbar {
-    height: 7%;
-  }
   .menu {
     font-size: 20px;
     top: 15px;

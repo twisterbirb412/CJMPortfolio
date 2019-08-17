@@ -11,7 +11,7 @@ function bioLink() {
 }
 
 function projectLink() {
-    (`$.project`).click(function(event) {
+    $(`.project`).click(function(event) {
         event.preventDefault();
         projectsAutoScroll();   
     });
@@ -20,7 +20,7 @@ function projectLink() {
 //-----autoscroll functions------
 function bioAutoScroll() {
     $('html, body').animate({
-        scrollTop: $(".projSection").offset().top
+        scrollTop: $(`.projSection`).offset().top
     }, 1000);
 }
 
