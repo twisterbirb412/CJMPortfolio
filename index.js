@@ -5,31 +5,34 @@
 function bioLink() {
     $(`.navbar`).on("click", ".bio", function(event){
         event.preventDefault();
-        window.alert("it's working!!");
-        bioAutoScroll();
+        autoScroll('.bioSection') 
     });
 }
 
 function projectLink() {
-    $(`.project`).click(function(event) {
+    $(`.navbar`).on("click", ".projects", function(event) {
         event.preventDefault();
-        projectsAutoScroll();   
+        autoScroll('.projSection')   
     });
 }
 
+function contactLink() {
+    $(`.navbar`).on("click", ".contact", function(event) {
+        event.preventDefault();
+        window.alert('!!');
+        autoScroll('.footer') 
+        
+    });  
+}
+
 //-----autoscroll functions------
-function bioAutoScroll() {
-    $('html, body').animate({
-        scrollTop: $(`.projSection`).offset().top
-    }, 1000);
-}
 
-function projectsAutoScroll() {
-
-}
-
-function contactAutoScroll() {
-
+function autoScroll(className) {
+    let elementPosition = $(className).offset().top;
+    let pagePosition = $(`.header`).height();
+    let xCoord = elementPosition - pagePosition;
+    
+    $('html, body').animate({scrollTop: xCoord}, 1000);
 }
 
 
@@ -37,6 +40,7 @@ function contactAutoScroll() {
 function runPortfolioPage() {
     bioLink();
     projectLink();
+    contactLink();
 }
 
 $(runPortfolioPage);
