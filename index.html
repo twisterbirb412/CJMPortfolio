@@ -1,4 +1,4 @@
-<html>
+<html lang=en>
 <head>
     <title>Candace Joy Metsker Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,7 +17,14 @@
                 <li class='projects navLink'>PROJECTS</li>
                 <li class="contact navLink">CONTACT</li>
             </ul>
-            <div class="hamburger">&#9776;</div>
+            <div class="dropdown" tabindex="-1">
+                <div class="hamburger">&#9776;</div>
+                <div id="myDropdown" class="dropdown-content">
+                    <li class='bio navLink'>BIO</li>
+                    <li class='projects navLink'>PROJECTS</li>
+                    <li class="contact navLink">CONTACT</li>
+                </div>
+            </div>
         </nav>    
     </header>
     <main>
@@ -39,6 +46,7 @@
                 <p>For more info please check out the <a href="https://twisterbirb412.github.io/QuizApp/" target="_blank">live page</a> or <a href="https://github.com/twisterbirb412/QuizApp" target="_blank">repo</a> on this project.</p><br>
                 <div class="quizApp techList">
                     <ul ><label>Technologies Used</label>
+                        <li>HTML, CSS, Javascript, JQuery</li>
                         <li>Microsoft Visual Studio</li>
                         <li>Google Chrome Devtools</li>
                         <li>Github</li>       
@@ -49,23 +57,25 @@
     </main>
     <footer class="footer">
         <h3>CONTACT: </h3>
-        <ul class ="footerLinks">
-            <li>
-                <a href="mailto:candacejmetsker@gmail.com">
-                    <img src="Images/Gmail_logo.png" alt="Gmail logo">
-                </a>
-            </li>
-            <li>
-                <a href="http://www.linkedin.com/in/candace-metsker-8111a255" target="_blank">
-                     <img src="Images/LinkedIn_logo.png" alt="LinkedIn logo">
-                </a>
-            </li>
-            <li>
-                <a href="https://github.com/twisterbirb412" target="_blank">
-                    <img src="Images/GitHub_logo.png" alt="Github logo">
-                </a>
-            </li>
-        </ul>
+        <nav role = "navigation">
+            <ul class ="footerLinks">
+                <li>
+                    <a href="mailto:candacejmetsker@gmail.com">
+                        <img src="Images/Gmail_logo.png" alt="Gmail logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.linkedin.com/in/candace-metsker-8111a255" target="_blank">
+                        <img src="Images/LinkedIn_logo.png" alt="LinkedIn logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/twisterbirb412" target="_blank">
+                        <img src="Images/GitHub_logo.png" alt="Github logo">
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="index.js"></script>

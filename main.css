@@ -5,7 +5,7 @@
 
 
   main {
-    font-size: 20px;
+    font-size: 18px;
     position: relative;
     color: #444;
     line-height: 1.5;
@@ -16,7 +16,7 @@
     position: fixed;
     width: 100%;
     margin-top: 0;
-    z-index: 1000;
+    z-index: 1;
   }
 
   .nameBanner {
@@ -26,7 +26,6 @@
 
   p, li {
     font-family: 'Quattrocento', serif;
-    z-index: 8;
   }
 
   .navbar {
@@ -37,7 +36,7 @@
       padding: 15px;
   }
 
-  nav * {
+  .menu * {
       text-decoration: none;
       display: inline-block;
       color: white;
@@ -79,9 +78,14 @@
     font-weight: bold;
     }
 
-  p a:hover {
+  p a:hover, p a:focus, .hamburger:hover, .hamburger:focus {
     color: #FF1493;
+    cursor: pointer;
   }
+
+.exampleImages * {
+  margin: 10px;
+}
 
 .techList > * {
       text-decoration: none;
@@ -152,6 +156,46 @@ label {
     width: 40px;
   }
 
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  font-family: 'Oswald', sans-serif;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 2;
+  right: 25%;
+  top: 10px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content li {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content li:hover {background-color: #ddd}
+
+.dropdown:focus {
+  outline: none;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display:block;
+}
+
   /* Smartphones (portrait and landscape) ----------- */
 @media screen and (max-width: 520px) {
   header {
@@ -179,24 +223,16 @@ label {
     font-size: 15px;
     top: 8%;
     right: 1%;
+    color: white;
   }
 
   .menu {
     font-size: 0;
-  }
-
-  footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 7%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    opacity: 0;
   }
   
 footer h3 {
-    font-size: 15px;
+    font-size: 20px;
   }
 }
 
@@ -226,12 +262,12 @@ footer h3 {
     font-size: 30px;
   }
 
-  .hamburger {
-      opacity: 0;
+  .dropdown {
+    display: none;
   }
 
 footer h3 {
-    font-size: 18px;
+    font-size: 25px;
   }
 
 }
@@ -261,12 +297,17 @@ footer h3 {
     top: 15px;
   }
 
+  .dropdown {
+    display: none;
+  }
+
   .hamburger {
+    font-size: 0;
     opacity: 0;
   }
 
-footer h3 {
-  font-size: 20px;
-}
+  footer h3 {
+    font-size: 30px;
+  }
 
 }
