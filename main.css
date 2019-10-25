@@ -83,9 +83,6 @@
     cursor: pointer;
   }
 
-.exampleImages * {
-  margin: 10px;
-}
 
 .techList > * {
       text-decoration: none;
@@ -130,6 +127,7 @@ label {
     max-height: 200px;
     max-width: 400px;
     display: inline block;
+    margin: 10px;
 }
 
   footer {
