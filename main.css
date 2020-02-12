@@ -217,6 +217,10 @@ label {
   font-size: 25px;
   }
 
+  h3 {
+    font-size: 20px;
+  }
+
   .hamburger {
     font-size: 15px;
     top: 8%;
@@ -260,6 +264,10 @@ footer h3 {
     font-size: 30px;
   }
 
+  h3 {
+    font-size: 25px;
+  }
+
   .dropdown {
     display: none;
   }
@@ -288,6 +296,10 @@ footer h3 {
 
   h2 {
     font-size: 40px;
+}
+
+h3 {
+  font-size: 30px;
 }
 
   .menu {
